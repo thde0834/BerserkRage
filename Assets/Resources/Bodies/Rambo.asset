@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc88e3ff4eda644eb57a94077001b95, type: 3}
+  m_Name: Rambo
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 4970331540340677733, guid: 2a44b115bbb92164d9b8cb4a2957ae20, type: 3}
+  - {fileID: -7152554546928572436, guid: 2a44b115bbb92164d9b8cb4a2957ae20, type: 3}
+  - {fileID: 1070779813357580679, guid: 2a44b115bbb92164d9b8cb4a2957ae20, type: 3}
+  - {fileID: 5340203959938977637, guid: 2a44b115bbb92164d9b8cb4a2957ae20, type: 3}
