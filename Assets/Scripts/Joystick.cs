@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Joystick : MonoBehaviour
 {
+    public float Angle { get; private set; }    // use for Bullet Launcher
+    public float AngleInRad { get; private set; }    // use for Bullet Launcher
+
     public Transform outerCircle;
     public Transform innerCircle;
 
@@ -11,8 +14,6 @@ public class Joystick : MonoBehaviour
     private float limit;
 
     public Transform gun;
-    [SerializeField]
-    private float angle;
 
     [SerializeField]
     private Vector2 pointA;
@@ -70,10 +71,10 @@ public class Joystick : MonoBehaviour
         {
             pointB.x = pointA.x;
         }
-        // Input.mousePosition.x < limit
+    
         if (pointA.x < 0)
         {
-            rotateGun(angle);
+            rotateGun(Angle);
         }
         
     }
@@ -87,7 +88,8 @@ public class Joystick : MonoBehaviour
 
             offset = Vector2.ClampMagnitude(offset, 1.0f);
 
-            angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
+            AngleInRad = Mathf.Atan2(offset.y, offset.x);
+            Angle = AngleInRad * Mathf.Rad2Deg;
 
             innerCircle.position = new Vector2(pointA.x + offset.x, pointA.y + offset.y);
 

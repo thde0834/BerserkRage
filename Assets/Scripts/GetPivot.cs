@@ -5,19 +5,15 @@ using UnityEngine;
 public class GetPivot : MonoBehaviour
 {
     public Transform player;
-    [SerializeField]
-    private Vector3 currPos;
+    
+    public Vector3 Pivot { get; private set; }
 
     // Start is called before the first frame update
     void Start()
     {
-        currPos = player.position;
-        transform.position = currPos;
+        Pivot = player.position;
+
+        transform.position = Pivot;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

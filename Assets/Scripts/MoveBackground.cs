@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class MoveBackground : MonoBehaviour
 {
-    private float startPos, length, velocity;
+    private float startPos, length, updateLength, velocity;
     public float parallaxValue;
 
     [SerializeField] private float dist;
-    [SerializeField] private float temp;
 
     [SerializeField] private float timeElapsed;
     [SerializeField] private float distTravelled;
@@ -23,6 +22,8 @@ public class MoveBackground : MonoBehaviour
         // Set velocity to edgy memey value
         velocity = 6.66f;
 
+        updateLength = 2 * length;
+
     }
 
     // Update is called once per frame
@@ -31,21 +32,10 @@ public class MoveBackground : MonoBehaviour
         timeElapsed += Time.deltaTime;
         distTravelled = velocity * timeElapsed;
 
-        //dist = (cam.transform.position.x * parallaxValue);
-        //temp = (cam.transform.position.x * (1 - parallaxValue));
-
         dist = (distTravelled * parallaxValue);
-        temp = (distTravelled * (1 - parallaxValue));
-
-        //transform.position = new Vector3(startPos + dist, transform.position.y, transform.position.z);
 
         transform.position = new Vector3(startPos - dist, transform.position.y, transform.position.z);
 
-        // Update as Camera max X reaches end of Layer PNG
-        //if (temp > startPos + length) startPos += length;
-        //else if (temp < startPos - length) startPos -= length;
-
-        if (dist > startPos + length) startPos += length;
-        else if (dist < startPos - length) startPos -= length;
+        if (dist > startPos + length) startPos += updateLength;
     }
 }

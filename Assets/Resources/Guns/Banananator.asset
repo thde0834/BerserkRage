@@ -19,8 +19,14 @@ MonoBehaviour:
   level: 1
   maxLevel: 1
   position:
-  - {x: 0.5, y: -0.3, z: 0}
+  - {x: 0.9, y: -0.1, z: 0}
+  addValues:
+  - {x: 0.5, y: 0.19, z: 0}
+  firePoint:
+  - {x: 1.4, y: 0.089999996, z: 0}
   radius:
-  - 0.5830952
-  requiresBothHands: 
+  - 0.9055385
+  requiresBothHands: 00
+  fireRate:
+  - 1
   isPowerUp: 0
