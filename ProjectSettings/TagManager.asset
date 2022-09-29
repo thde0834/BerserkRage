@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 1303817485
+    locked: 0
+  - name: BG_Far
+    uniqueID: 2456643905
+    locked: 0
+  - name: BG_Mid
+    uniqueID: 1760457197
+    locked: 0
+  - name: BG_Close
+    uniqueID: 2173015583
+    locked: 0
+  - name: Pathway
+    uniqueID: 1699436243
+    locked: 0
+  - name: Player
+    uniqueID: 197798963
+    locked: 0
+  - name: Ground_Far
+    uniqueID: 265540715
+    locked: 0
+  - name: Ground_Mid
+    uniqueID: 4134727279
+    locked: 0
+  - name: Ground_Close
+    uniqueID: 3130134867
+    locked: 0
