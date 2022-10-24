@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 2cd719f59510bc74b8eedab8696282af
+guid: 9905f9f06a7a8844f93ef7f0f7ce15f0
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4914369310039159321
-    second: banananator_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,19 +89,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -119,22 +104,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: banananator_0
+      name: Rando_Legs_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 23
-        width: 23
-        height: 14
+        x: 16
+        y: 17
+        width: 32
+        height: 30
       alignment: 9
-      pivot: {x: 0.08695652, y: 0.21428572}
+      pivot: {x: 0.53125, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91237fb99d8533440800000000000000
-      internalID: 4914369310039159321
+      spriteID: 806eda861e4fd764fb9e98b996269f20
+      internalID: -246488533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rando_Legs_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 17
+        width: 32
+        height: 30
+      alignment: 9
+      pivot: {x: 0.53125, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de3fc9188d4f2b4f8a65c7bbfb110c3
+      internalID: -280803587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rando_Legs_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 17
+        width: 32
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56357cebffc0fbe4fa7962ed8749e557
+      internalID: 631270829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rando_Legs_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 17
+        width: 32
+        height: 30
+      alignment: 9
+      pivot: {x: 0.53125, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a361a6ac027356548bedf776bc6b6989
+      internalID: -1233810399
       vertices: []
       indices: 
       edges: []
@@ -150,7 +198,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      banananator_0: 4914369310039159321
+      Rando_Legs_1: -280803587
+      Rando_Legs_2: 631270829
+      Rando_Legs_3: -1233810399
+      Rando_Legs_0: -246488533
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
