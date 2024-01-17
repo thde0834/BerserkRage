@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6293537508657331999}
-  - component: {fileID: 6293537508657331992}
+  - component: {fileID: 4135742346339567910}
   m_Layer: 0
   m_Name: Back_Weapon_Holder
   m_TagString: Untagged
@@ -25,14 +25,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6293537508657331998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6293537508657331992
+--- !u!114 &4135742346339567910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,10 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6293537508657331998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10b33748e2095ff4586db9bfd8183db3, type: 3}
+  m_Script: {fileID: 11500000, guid: ef4ee11ecff93754698d1e76977882fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gripPosition: {fileID: 11400000, guid: 709665a1b0688524bae9a7c360399dbb, type: 2}
-  gripRotation: {fileID: 11400000, guid: 373a6e4b4737e884da8f5b9192fb473c, type: 2}
-  handPosition: {fileID: 11400000, guid: 3dd9886948761904082fd69fd49124f8, type: 2}
-  handRotation: {fileID: 11400000, guid: d3b7d9f352c16284d97b193aea8b9b59, type: 2}
+  <Successors>k__BackingField: []

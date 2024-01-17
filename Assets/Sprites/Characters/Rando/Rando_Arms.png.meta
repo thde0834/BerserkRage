@@ -154,7 +154,7 @@ TextureImporter:
         width: 7
         height: 18
       alignment: 9
-      pivot: {x: 0.5, y: 0.8666667}
+      pivot: {x: 0.42857143, y: 0.8333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,7 +175,7 @@ TextureImporter:
         width: 7
         height: 18
       alignment: 9
-      pivot: {x: 0.5, y: 0.8666667}
+      pivot: {x: 0.42857143, y: 0.8333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,11 +191,11 @@ TextureImporter:
       name: Rambo_Arms_2
       rect:
         serializedVersion: 2
-        x: 7
-        y: 23
+        x: 6
+        y: 22
         width: 6
         height: 16
-      alignment: 2
+      alignment: 9
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -212,8 +212,8 @@ TextureImporter:
       name: Rambo_Arms_3
       rect:
         serializedVersion: 2
-        x: 27
-        y: 23
+        x: 26
+        y: 22
         width: 6
         height: 16
       alignment: 2
@@ -233,7 +233,7 @@ TextureImporter:
       name: Rambo_Arms_4
       rect:
         serializedVersion: 2
-        x: 7
+        x: 6
         y: 7
         width: 6
         height: 6
@@ -254,12 +254,12 @@ TextureImporter:
       name: Rambo_Arms_5
       rect:
         serializedVersion: 2
-        x: 28
+        x: 26
         y: 7
         width: 6
         height: 6
       alignment: 9
-      pivot: {x: 0.33333334, y: 1}
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -1,25 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour, Controls.IGameplayActions
+public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private Vector2Variable AimVector;
+    private const string FRONT_ARM_TAG = "Front_Arm";
+    private const string BACK_ARM_TAG = "Back_Arm";
 
-    private Controls.GameplayActions gameplayActions;
+    [field: SerializeField] public ArmHandler FrontArmController { get; private set; }
+    [field: SerializeField] public ArmHandler BackArmController { get; private set; }
+
+    [field: SerializeField] public WeaponHolderHandler FrontWeaponHolder { get; private set; }
+    [field: SerializeField] public WeaponHolderHandler BackWeaponHolder { get; private set; }
 
     private void Awake()
     {
-        Controls controls = new Controls();
-        gameplayActions = controls.Gameplay;
-        gameplayActions.SetCallbacks(this);
+        FrontArmController ??= GameObject.FindGameObjectWithTag(FRONT_ARM_TAG).GetComponent<ArmHandler>();
+        FrontWeaponHolder ??= FrontArmController.GetComponentInChildren(typeof(WeaponHolderHandler)) as WeaponHolderHandler;
+
+        BackArmController ??= GameObject.FindGameObjectWithTag(BACK_ARM_TAG).GetComponent<ArmHandler>();
+        BackWeaponHolder ??= BackArmController.GetComponentInChildren(typeof(WeaponHolderHandler)) as WeaponHolderHandler;
     }
 
-    private void Start() => AimVector.SetValue(Vector2.right);
-
-    private void OnEnable() => gameplayActions.Enable();
-    private void OnDisable() => gameplayActions.Disable();
-
-    public void OnAim(InputAction.CallbackContext context) => AimVector.SetValue(context.ReadValue<Vector2>());
 }

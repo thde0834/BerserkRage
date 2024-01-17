@@ -1,31 +1,44 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
     public static WeaponManager Instance { get; private set; }
+    private void Awake() => Instance = this;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
-
+    // temp
     [SerializeField]
     private Weapon currentWeapon;
+    private GameObject weaponPrefab;
+    private WeaponHandler[] weaponControllers;
 
-    public static event Action<Weapon> OnWeaponChanged;
-    
+    [SerializeField]
+    private Transform parent;
+
     // temporary
-    private void Start()
+    private void OnEnable()
     {
         SetWeapon(currentWeapon);
     }
 
     public void SetWeapon(Weapon weapon)
     {
+        if (weaponPrefab != null)
+        {
+            Destroy(weaponPrefab);
+        }
+
         currentWeapon = weapon;
-        OnWeaponChanged?.Invoke(currentWeapon);
+        weaponPrefab = Instantiate(currentWeapon.Prefab, parent);
+        weaponControllers = weaponPrefab.GetComponentsInChildren<WeaponHandler>();
     }
+
+    public void Transform(Vector2 aim)
+    {
+        foreach(var controller in weaponControllers)
+        {
+            controller.Transform(new object[] { aim });
+        }
+    }
+
 }

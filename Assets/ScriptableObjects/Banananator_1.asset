@@ -19,5 +19,5 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: a02e231a7e386ad44b59fad7e5098fe1, type: 2}
   Radius:
     UseConstant: 1
-    ConstantValue: 2
+    ConstantValue: 1.5
     Variable: {fileID: 0}
